@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Perfil</title>
+</head>
+<body class="perfil">
+
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html" id="home"><img src="img/iconos/baseline_home_black_24dp.png" alt="home" >Home</a></li>
+            <li><a href="series.html" id="series"><img src="img/iconos/baseline_movie_black_24dp.png" alt="series"> Series</a></li>
+            <li><a href="peliculas.html" id="peliculas"><img src="img/iconos/baseline_search_black_24dp.png" alt="peliculas"> Peliculas</a></li>
+            <li><a href="perfil.html" id="perfil"><img src="img/iconos/baseline_person_black_24dp.png" alt="perfil"> Perfil</a></li>
+            <li><a href="inicio.html" id="cerrarSesion"><img src="img/iconos/baseline_person_black_24dp.png" alt="cerrarSesion"> cerrar Sesion</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <article id="usuario_img">
+                <img src="img/iconos/nuevo-perfil.png" width="200px" height="200px">
+                <p id="perfilNombreUsuario">Nombre de usuario</p>
+            </article>
+        </section>
+        <section>
+       <!--<section id="form__1">-->
+            
+                <form class="form1" action="index.html" method="post">
+                    <article class="article_label">
+                        <label for="mail">E-mail</label>
+                        <input id="mailPerfil" type="mail" name="emails" placeholder="ejemplo@gmail.com" autofocus><br><br>
+                        <p id="msjmailPerfil" class="error">El email es invalido</p>
+                        <label for="pass">Contraseña</label>
+                        <input id="pass" type="password" name="pass" placeholder="*********"><br><br>
+                        <label>Nueva contraseña</label>
+                        <input id="passPerfil" type="password" name="pass"><br><br>
+                        <p id="msjPassPerfil" class="error">8 caracteres ( mínimo 2 letras, 2 números y 2 caracteres especiales)</p>
+                        <label>Repetir nueva contraseña</label>
+                        <input id="passPerfilRep" type="password" name="pass"><br><br>
+                        <p id="mensajepassRegRep" class="error">Debe ser igual a la contraseña anterior</p>
+                    </article>
+                                      
+                </form>
+            
+        </section>
+        <section>
+        
+            
+                <form action="index.html" method="post"> 
+                    <label>Seleccionar metodo de pago</label>
+                    <br> <br>
+                    <input type="radio" name="met_pago"  id="radioTarjeta">
+
+                    <label>Tarjeta de credito</label>
+                    <br> <br>
+                    <input type="text" placeholder="Numero de tarjeta" class="campo" id="TarjetaPerfil">
+                    <input type="text" placeholder="XXX" class="campo" id="xx">
+                    <p id="msjTarjeraPerfil" class="error">introducí una tarjeta superior a los 16 dígitos</p>
+                    <p id="msjTarjetaPerfil2" class="error">Tarjeta invalida</p>
+
+                    <p id="msjpinPerfil" class="error">Insertá tu pin debe ser distintos de "0".</p>
+                    <br> <br>
+                    <input type="radio" name="met_pago"  id="radioCupon">
+
+                    <label>cupon de pago</label>
+                    <br> <br>
+                    <input type="checkbox">
+                    <label>Pago facil</label>
+                    <input type="checkbox">
+                    <label>Rapipago</label>
+                    <br> <br>
+                    <input type="radio" name="met_pago"  id="radioTransferencia">
+
+                    <label>Transferencia bancaria</label>
+                    <br> <br>
+                    <label>CBU: 2121212121212121121212</label>
+                    <br><br>
+                    
+                        <button class="boton__1" disabled id="botonGuardar" > 
+                            <span>Guardar cambios</span>
+                        </button>
+                
+                        <button class="boton__2"> 
+                            <span>Cancelar suscripcion</span>
+                        </button>
+                
+                    
+
+                </form>
+            
+        </section>
+
+    </main>
+
+   
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/funciones.js"></script>
+</body>
+</html>

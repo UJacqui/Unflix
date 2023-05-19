@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="css/estiloscontraseña.css">
+</head>
+<body class="reg_usuario">
+    <h1>Registrarse</h1>
+    <section>
+        <form action="index.html" method="post">
+            <div class="datos">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" placeholder="Ingrese nombre" id="nombreRegitro">
+                <p id="mensajeNombreRegitro" class="error">Solo se admiten caracteres</p>
+                <br><br>
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" placeholder="Ingrese apellido" id="apellidoRegitro">
+                <p id="mensajeApellidoRegitro" class="error">Solo se admiten caracteres</p>
+                <br><br>
+                <label for="E-mail">E-mail</label>
+                <input type="text" name="email" placeholder="ingrese email" id="emailRegitro">
+                <p id="mensajeEmailRegitro" class="error">Debes ingresar un email valido</p>
+                <br><br>
+                <label for="usuario">Nombre de usuario</label>
+                <input type="text" name="usuario" placeholder="Nombre de usuario" id="usuarioRegistro">
+                <p id="mensajeUsuarioRegitro" class="error">Solo admite letras y numeros</p>
+                <br><br>
+                <label for="contraseña">Contraseña</label>
+                <input type="password" name="contraseña" placeholder="Contraseña" id="passRegistro">
+                <p id="mensajePassRegitro" class="error">8 caracteres ( mínimo 2 letras, 2 números y 2 caracteres especiales)</p>
+                <br><br>
+                <label for="r_contraseña">Repetir contraseña</label>
+                <input type="password" name="r_contraseña" placeholder="Repetir contraseña" id="passRegistroRep">
+                <p id="mensajepassRegRep" class="error">Debe ser igual a la contraseña anterior</p>
+                <br><br>
+            </div>
+            <div class="pago">
+                <label for="pago">Metodo de pago</label>
+                <br><br>
+                <input type="radio" name="metodo" id="creditoRegistro">Tarjeta de crédito
+                <br><br>
+                <input id="cod_tarjeta" type="text" name="tarjeta" placeholder="Numero de tarjeta">
+                
+                <input id="clave_tarjeta" type="text" name="codigo_tarjeta" placeholder="XXX">
+                <p id="mensajeTarjeta1" class="error">Tarjeta no valida</p>
+                <p id="mensajeTarjeta2" class="error">Revisar código de tarjeta</p>
+                <p id="mensajeTarjeta" class="error">Su numero debe ser mayor a 16 digitos y menor a 19.</p>
+
+                <p id="mensajeClave" class="error">Insertá tu pin debe ser distintos de "0".</p>
+                <br><br>
+                <input type="radio" name="metodo" id="cupon">Cupón de pago
+                <br><br>
+                <div class="checkbox">
+                    <input type="checkbox" name="opcion_pago" id="pago_facil">
+                    <label for="pagofacil">Pago facil</label>
+                    <input type="checkbox" name="opcion_pago" id="rapipago">
+                    <label for="rapipago">RapiPago</label>
+                </div>
+                <br><br>
+                <input type="radio" name="metodo" id="transferencia">Transferencia bancaria
+                <br><br>
+                <p>CBU: 2183909411100018971375</p>
+                <br><br>
+                <input id="confirmar" type="submit" name="confirmar" value="Confirmar" disabled>
+                
+                <input id="cancelar" type="submit" name="cancelar" value="Cancelar">
+                <p id="msjConfirmar" class="error">Todos los campos deben estar completos</p>
+            </div>
+        </form>
+    </section>
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/funciones.js"></script>
+</body>
+</body>
+</html>

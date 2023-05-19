@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla Principal</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="p_principal">
+
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html" id="home"><img src="img/iconos/baseline_home_black_24dp.png" alt="home" >Home</a></li>
+            <li><a href="series.html" id="series"><img src="img/iconos/baseline_movie_black_24dp.png" alt="series"> Series</a></li>
+            <li><a href="peliculas.html" id="peliculas"><img src="img/iconos/baseline_search_black_24dp.png" alt="peliculas"> Peliculas</a></li>
+            <li><a href="perfil.html" id="perfil"><img src="img/iconos/baseline_person_black_24dp.png" alt="perfil"> Perfil</a></li>
+            <li><a href="inicio.html" id="cerrarSesion"><img src="img/iconos/baseline_person_black_24dp.png" alt="cerrarSesion"> Cerrar sesion</a></li>
+        </ul>
+    </nav>
+   
+    <section>
+        <form action="#" method="get">
+            <div class="categ">
+                <label for="categoria">Categorias</label>
+                <select name="categoria" id="categ">
+                    <option value="1">Seleccionar categoria</option>
+                    <option value="2">Terror</option>
+                    <option value="3">Animada</option>
+                    <option value="4">Suspenso</option>
+                    <option value="5">Ciencia Ficcion</option>
+                </select>
+            </div>
+            <div class="busqueda">
+                <input type="search" name="busqueda" id="busqueda" placeholder="Buscar por nombre">
+            </div>
+        </form>
+    </section>
+
+    <section class="grilla">
+
+        <a href="descripcionesPelis-Series/anneWhithAnE.html" class="series" id="anne"> <img src="img/series/anne.jpg" alt=""  width="300" height="180"></a>
+        <a href="descripcionesPelis-Series/breking-bad.html" class="series" id="breaking"><img src="img/series/Breaking-Bad.jpg" alt="" width="300" height="180"></a>
+        <a href="descripcionesPelis-Series/game-of-thrones.html" class="series" id="games"><img src="img/series/Got.jpg" alt="" width="300" height="180"></a>
+        <a href="descripcionesPelis-Series/la-casa-de-papel.html" class="series" id="papel"><img src="img/series/La casa de papel.jpg" alt="" width="300" height="180"></a>
+        <a href="descripcionesPelis-Series/the-umbrella-academy.html" class="series" id="umbrella"><img src="img/series/tua.jpg" alt="" width="300" height="180"></a>
+        <a href="descripcionesPelis-Series/the-walking-dead.html" class="series" id="walking"><img src="img/series/twd.jpg" alt="" width="300" height="180"></a>
+
+        <a href="descripcionesPelis-Series/anabelle2.html" class="peliculas" id="anabell"><img src="img/peliculas/annabelle-2.jpg" alt=""  width="300" height="180"></a>
+        <a href="descripcionesPelis-Series/cindirella.html" class="peliculas" id="cindirella"><img src="img/peliculas/Cinderela.jpg" alt="" width="300" height="180"></a>
+        <a href="descripcionesPelis-Series/coco.html" class="peliculas" id="coco"><img src="img/peliculas/coco.jpg" alt="" width="300" height="180"></a>
+        <a href="descripcionesPelis-Series/encanto.html" class="peliculas" id="encanto"><img src="img/peliculas/encanto.jpg" alt="" width="300" height="180"></a>
+        <a href="descripcionesPelis-Series/shrek.html" class="peliculas" id="shrek"><img src="img/peliculas/shrekp.jpg" alt="" width="300" height="180"></a>
+        <a href="descripcionesPelis-Series/harry-potter.html" class="peliculas" id="hp"><img src="img/peliculas/hp.jpg" alt="" width="300" height="180"></a>
+
+
+    </section>
+    <script src="./js/jquery-3.6.0.min.js"></script>      
+  <script src="./js/funciones.js"></script>
+</body>
+</html>

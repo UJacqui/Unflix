@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series</title>
+    <link rel="stylesheet" href="css/estilosSeries-Peliculas.css">
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html" id="home"><img src="img/iconos/baseline_home_black_24dp.png" alt="home" >Home</a></li>
+            <li><a href="series.html" id="series"><img src="img/iconos/baseline_movie_black_24dp.png" alt="series"> Series</a></li>
+            <li><a href="peliculas.html" id="peliculas"><img src="img/iconos/baseline_search_black_24dp.png" alt="peliculas"> Peliculas</a></li>
+            <li><a href="perfil.html" id="perfil"><img src="img/iconos/baseline_person_black_24dp.png" alt="perfil"> Perfil</a></li>
+            <li><a href="inicio.html" id="cerrarSesion"><img src="img/iconos/baseline_person_black_24dp.png" alt="cerrarSesion"> cerrar Sesion</a></li>
+        </ul>
+    </nav>
+
+    <section >
+        <form action="#" method="get">
+            <div class="filtro">
+                <label for="filtro">Filtrar por: </label>
+                <select name="filtro" id="filtro">
+                    <option value="1">Estreno reciente</option>
+                    <option value="2">Idioma original</option>
+                    <option value="3">Duracion</option>
+                </select>
+                <input type="submit" value="Aplicar filtro" id="aplicar">
+            </div>
+        </form>
+    </section>
+
+    <section class="fotos">
+        <a href="descripcionesPelis-Series/anneWhithAnE.html" class="series" id="anne"> <img src="img/series/anne.jpg" alt=""  width="350" height="180"></a>
+        <a href="descripcionesPelis-Series/breking-bad.html" class="series" id="breaking"><img src="img/series/Breaking-Bad.jpg" alt="" width="350" height="180"></a>
+        <a href="descripcionesPelis-Series/game-of-thrones.html" class="series" id="games"><img src="img/series/Got.jpg" alt="" width="350" height="180"></a>
+        <a href="descripcionesPelis-Series/la-casa-de-papel.html" class="series" id="casa"><img src="img/series/La casa de papel.jpg" alt="" width="350" height="180"></a>
+        <a href="descripcionesPelis-Series/the-umbrella-academy.html" class="series" id="umbrella"><img src="img/series/tua.jpg" alt="" width="350" height="180"></a>
+        <a href="descripcionesPelis-Series/the-walking-dead.html" class="series" id="walking"><img src="img/series/twd.jpg" alt="" width="350" height="180"></a>
+        <a href="descripcionesPelis-Series/black-mirror.html" class="series" id="mirror"><img src="img/series/blackmirror.jpg" alt="" width="350" height="180"></a>
+        <a href="descripcionesPelis-Series/juego-del-calamar.html" class="series" id="calamar"><img src="img/series/juegocalamar.jpg" alt="" width="350" height="180"></a>
+        <a href="descripcionesPelis-Series/las-chicas-del-cable.html" class="series" id="chicas"><img src="img/series/laschicas.jpg" alt="" width="350" height="180"></a>
+    </section>
+    <script src="./js/jquery-3.6.0.min.js"></script>      
+    <script src="./js/funciones.js"></script>
+</body>
+</html>

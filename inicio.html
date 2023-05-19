@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/estiloscontraseña.css">
+</head>
+<body class="login">
+    <header>
+         
+        <h1>UNFLIX</h1>
+ 
+    </header>
+    <main>
+         
+       <section>
+                <article class="article1">
+                    <form action="index.html" method="post">
+                        <label for="usuario">Nombre de usuario</label>
+                        <input type="text" name="usuario" placeholder="Nombre de usuario" id="usuario" required>
+                        <p id="msjInicioUsuario" class="error">Porfavor ingresa tu usuario</p>
+                        <br><br>
+                        <label for="usuario">Contraseña</label>
+                        <input type="password" name="contraseña" placeholder="Contraseña" id="contrasenia" required>
+                        <p id="msjInicioContra" class="error">Porfavor ingresa tu contraseña</p>
+                        <br><br>
+                        <input id="iniciar_sesion" onclick="datosInicio()" type="submit" name="Iniciar sesion" value="Iniciar sesion">
+                        <br><br>
+                    </form>
+                </article>
+                <article class="article2">
+                    <a href="recuperarcontrasenia.html">Recuperar contraseña</a>
+                    <br><br>
+                    <a href="registrodeusuario.html">Registrarse</a>
+                </article>
+         </section>
+        
+  <script src="./js/jquery-3.6.0.min.js"></script>      
+  <script src="./js/funciones.js"></script>      
+</body>
+</html>

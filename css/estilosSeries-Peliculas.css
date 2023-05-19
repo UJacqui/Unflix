@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+/*pagina principal de series y peliculas*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:'Nunito', sans-serif;
+    background-color: rgb(225, 241, 250);
+    
+}
+.menu {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    flex-direction: row;
+
+}
+
+#home, #peliculas , #series, #perfil{
+  
+    padding-left: 150px;
+    
+}
+
+.menu li {
+
+    flex: auto;
+    border: solid black;
+    background-color: rgb(115, 167, 198);
+    font-weight: bolder;
+
+
+}
+
+.menu li a {
+    display: flex;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    
+
+}
+
+
+.menu li a:hover {
+    background-color:  rgb(57, 100, 125);
+}
+
+.menu img{
+    padding-top: 5px;
+}
+
+body section form {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    margin-left: 40%;
+    font-family:'Nunito', sans-serif;
+
+}
+
+
+body .filtro select {
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-family:'Nunito', sans-serif;
+}
+body .filtro input{
+padding: 10px;
+border-radius: 20px;
+font-weight: bolder;
+font-family:'Nunito', sans-serif;
+background-color: rgb(115, 167, 198);
+}
+
+.fotos{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    flex-wrap: wrap;
+   align-items: center;
+   margin-left: 120px;
+}
+
+.peliculas{
+    margin-bottom: 30px;
+    width: calc(33.33% - 10px);
+}
+
+.peliculas :hover{
+    -webkit-box-shadow: 18px 14px 15px 5px rgba(0,0,0,0.74); 
+    box-shadow: 18px 14px 15px 5px rgba(0,0,0,0.74);
+    -moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+    
+}
+.series{
+    margin-bottom: 30px;
+    width: calc(33.33% - 10px);
+}
+.series :hover{
+    -webkit-box-shadow: 18px 14px 15px 5px rgba(0,0,0,0.74); 
+    box-shadow: 18px 14px 15px 5px rgba(0,0,0,0.74);
+    -moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+}
+
+/* detalle de peliculas*/
+
+
+.contenedor1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    
+}
+.contenedor1 article{
+    margin: 30px;
+    margin-bottom:5px;
+    padding: 10px;
+}
+.contenedor1 p{
+    margin:10px;
+    margin-top: 30px;
+}
+.contenedor1 p a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.contenedor1 p a:hover{
+    text-shadow: 8px 6px 7px rgba(0,0,0,0.52);
+}
+.boton__1{
+    margin: 5px 0px 20px 180px;
+    padding: 10px;
+    padding-left: 90px;
+    padding-right: 90px;
+    border-radius: 30px;
+    background-color: rgb(115, 167, 198);
+}
+.boton__1 a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+    font-family: 'Nunito', sans-serif;
+}
+ h3{
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+aside{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-sizing: border-box;
+    margin-left: 25px;
+}
+/*detalle de series*/
+.contenedor2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.contenedor2 article{
+    margin: 30px;
+    padding: 10px;
+}
+.contenedor2 p{
+    margin:10px;
+    margin-top: 20px;
+}
+.contenedor2 p a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.contenedor2 p a:hover{
+    text-shadow: 8px 6px 7px rgba(0,0,0,0.52);
+}
+ 
+body .contenedor2 form{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    margin-left: -0.80px;
+    font-family:'Nunito', sans-serif;
+}
+#tempycap label{
+    padding-left: 10px;
+    padding-right: 30px;
+}
+#tempycap select{
+    padding-left : 20px;
+    padding-right : 20px;
+    padding-bottom : 5px;
+    padding-top : 5px;
+    border-radius: 20px;
+}
+/* CARROUSEL*/
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    width: 500px;
+    display: block;
+    overflow: visible;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+

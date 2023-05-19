@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* pantalla principal*/
+
+.p_principal {
+    font-family:'Nunito', sans-serif;
+    background-color: rgb(225, 241, 250);
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    flex-direction: row;
+
+
+}
+
+#home, #peliculas , #series, #perfil{
+    padding-left: 150px;
+    
+}
+
+.menu li {
+
+    flex: auto;
+    border: solid black;
+    background-color: rgb(115, 167, 198);
+    font-weight: bolder;
+
+
+}
+
+.menu li a {
+    display: flex;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    
+
+}
+
+
+.menu li a:hover {
+    background-color:  rgb(57, 100, 125);
+}
+
+.menu img{
+    padding-top: 5px;
+}
+
+
+
+/*---------------------------*/
+.p_principal section form {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+
+}
+
+.p_principal .categ select {
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Nunito',sans-serif;
+}
+
+.p_principal .busqueda input {
+    padding: 10px;
+    padding-left: 25px;
+    width: 300px;
+    border-radius: 5px;
+    background-image: url(../img/iconos/baseline_search_black_24dp.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    font-family: 'Nunito',sans-serif;
+
+}
+
+.p_principal .grilla {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 15px;
+    margin-left: 15px;
+  
+
+}
+
+.grilla a{
+    margin-bottom: 30px;
+}
+
+.series :hover{
+    -webkit-box-shadow: 18px 14px 15px 5px rgba(0,0,0,0.74); 
+    box-shadow: 18px 14px 15px 5px rgba(0,0,0,0.74);
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+}
+.peliculas :hover{
+    -webkit-box-shadow: 18px 14px 15px 5px rgba(0,0,0,0.74); 
+    box-shadow: 18px 14px 15px 5px rgba(0,0,0,0.74);
+    -moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+    
+}
+
+
+
+/* prefil */
+.perfil{
+    font-family: 'Nunito',sans-serif;
+     background-color: rgb(225, 241, 250);
+}
+
+
+.perfil main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px;
+    font-family: 'Nunito',sans-serif;
+}
+
+.campo{
+     padding: 8px;
+     border-radius: 4px;
+     border: 1px solid;
+}
+
+.perfil section{
+    width: (33.33% - 20px);
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-left:10px ;
+    padding-right:10px ;
+    margin-top: 30px;
+
+}
+
+
+#usuario_img{
+    margin-top: 80px;
+    text-align: center;
+}
+#usuario_img p{
+    padding: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.perfil article {
+    display: inline-block;
+   
+}
+
+#xx{
+   width: 50px;
+ 
+}
+
+.boton__1{
+
+    display: inline-flex;
+    width: 240px;
+    height: 40px;
+    color: black;
+    background-color: rgba(0, 128, 0, 0.822);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Nunito',sans-serif;
+    font-weight: bold;
+    
+}
+
+.boton__2{
+    display: inline-flex;
+    width: 240px;
+    height: 40px;
+    color: black;
+    background-color: rgba(126, 11, 11, 0.925);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Nunito',sans-serif;
+    font-weight: bold;
+}
+
+
+.article_label{
+    vertical-align: text-bottom;
+    text-align: right;
+    margin-right: 10px;
+    height: 100px;   
+
+}
+
+.article_input{
+    vertical-align: text-bottom;
+    text-align: left;
+    height: 100px;
+
+}
+
+input#passPerfil {
+    border-radius: 4px;
+    margin: 10px;
+    padding: 10px;
+}
+
+input#passPerfilRep, #pass{
+    border-radius: 4px;
+    margin: 10px;
+    padding: 10px; 
+}
+
+.error{
+    color: white;
+    font-weight: lighter;
+    font-family:'Nunito', sans-serif;
+    display: none;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.3);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0, 0.3);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0, 0.3);
+    -o-box-shadow: 0 0 10px rgba(0,0,0, 0.3);
+    background: rgba(148, 9, 9, 0.849);
+    margin-top: -120px;
+    margin-left: 40px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input#mailPerfil {
+    border-radius: 4px;
+    margin: 10px;
+    padding: 10px;
+}
